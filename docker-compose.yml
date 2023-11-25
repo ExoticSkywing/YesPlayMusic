@@ -5,8 +5,8 @@ services:
     image: yesplaymusic
     container_name: YesPlayMusic
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
+      - ./:/etc/localtime:ro
+      - ./:/etc/timezone:ro
     ports:
-      - 80:80
+      - 7077:80
     restart: always
